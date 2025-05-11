@@ -41,6 +41,17 @@ final class HomeController extends AbstractController
         ]);
     }
 
+    #[Route('/product/{id}', name: 'app_product')]
+    public function product(Request $request, TranslatorInterface $translator, EntityManagerInterface $entityManager, int $id): Response
+    {
+        $product = $entityManager->getRepository(Product::class)->find($id);
+
+        return $this->render('home/product.html.twig', [
+            'product' => $product,
+            'current_locale' => $request->getLocale(),
+        ]);
+    }
+
     #[Route('/debug', name: 'app_debug')]
     public function debug(Request $request): Response
     {
