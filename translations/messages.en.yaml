@@ -1,0 +1,17 @@
+welcome: "Welcome to our shop"
+
+# Navbar
+navbar_home: "Home"
+navbar_catalog: "Catalog"
+
+# Home
+home_title: "Home"
+
+# Product
+product_title: "Product"
+product_description: "Description"
+product_price: "Price"
+product_quantity: "Quantity"
+products: "Products"
+# Catalog
+catalog_title: "Catalog"

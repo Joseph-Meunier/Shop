@@ -1,0 +1,18 @@
+welcome: "Bienvenue dans notre boutique"
+
+# Navbar
+navbar_home: "Accueil"
+navbar_catalog: "Catalogue"
+
+# Home
+home_title: "Accueil"
+
+# Product
+product_title: "Produit"
+product_description: "Description"
+product_price: "Prix"
+product_quantity: "Quantité"
+products: "Produits"
+
+# Catalog
+catalog_title: "Catalogue"

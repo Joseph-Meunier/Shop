@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'catalog_title'|trans }}{% endblock %}
+
+{% block body %}
+
+    <h1>{{ 'catalog_title'|trans }}</h1>
+
+    <ul>
+        {% for product in products %}
+            <li>{{ product.title }}</li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
