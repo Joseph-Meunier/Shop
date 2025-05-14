@@ -1,7 +1,26 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello HomeController!{% endblock %}
+{% block title %}!{% endblock %}
 
 {% block body %}
-    <h1>{{ 'welcome'|trans }}</h1>
+
+<div class="flex flex-row h-screen w-screen">
+    <div class="flex flex-col items-center justify-center w-1/2">
+        <a href="{{ path('app_catalog') }}" class="h-screen">
+            <img src="{{ asset('./image/la-tendance.webp') }}" alt="logo" class="h-screen">
+        </a>
+    </div>
+    <div class="flex flex-col items-center justify-center w-1/2">
+        <a href="{{ path('app_catalog') }}" class="h-screen">
+            <img src="{{ asset('./image/l-obsession.webp') }}" alt="logo" class="h-screen">
+        </a>
+    </div>
+    <div class="flex flex-col items-center justify-center w-1/2">
+        <a href="{{ path('app_catalog') }}" class="h-screen">
+            <img src="{{ asset('./image/le-desir.webp') }}" alt="logo" class="h-screen">
+        </a>
+    </div>
+
+</div>
+
 {% endblock %}
